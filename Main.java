@@ -75,7 +75,7 @@ public class ArrayMethods
         int num = scanner.nextInt();
         System.out.print("Enter array length: ");
         length = scanner.nextInt();
-        intArr = new int[length];
+        // Reuse the array from Problem 2 or create a new one if necessary
         System.out.println("Enter values:");
         for (int i = 0; i < length; i++)
         {
@@ -83,6 +83,7 @@ public class ArrayMethods
         }
         System.out.println("Num divisible by " + num + ": " + numDivisible(intArr, num));
 
+        // Closing the scanner after all operations
         scanner.close();
     }
 }
